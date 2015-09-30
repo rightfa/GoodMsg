@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slide="http://schemas.android.com/apk/res/com.tjerkw.slideexpandable.library"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+	<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:id="@+id/item">
+
+		<TextView
+		    android:id="@+id/text"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginBottom="3dp"
+		    android:layout_marginTop="3dp"
+		    android:background="@drawable/bg1"
+		    android:text="Hello World"
+		    android:textColor="#ff000000"
+		    android:textSize="18sp" />
+
+		<Button
+		    android:id="@+id/expandable_toggle_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBottom="@+id/text"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignTop="@id/text"
+		    android:background="#00000000"
+		    android:textSize="30dp" />
+
+	</RelativeLayout>
+
+	<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:id="@+id/expandable"
+			android:background="#ffffff">
+
+		<Button
+		    android:id="@+id/buttonA"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:layout_marginTop="2dp"
+		    android:layout_weight="0.5"
+		    android:background="@drawable/expandablebtnshape"
+		    android:text="复制"
+		    android:textSize="20sp" />
+
+		<Button
+		    android:id="@+id/buttonB"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:layout_marginTop="2dp"
+		    android:layout_weight="0.5"
+		    android:background="@drawable/expandablebtnshape"
+		    android:text="发送"
+		    android:textSize="20sp" />
+
+	</LinearLayout>
+</LinearLayout>
